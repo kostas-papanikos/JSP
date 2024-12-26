@@ -1,15 +1,20 @@
+<%-- Comment --%>
 <html>
     <head>
         <title>JSP</title>
     </head>
     <body>
-        <%-- Java variable declarations --%>
+        <div class="topnav">
+            <a href="index.jsp">Home</a>       
+            <a href="login.jsp">Login</a>
+            <a href="register.jsp">Register</a>
+        </div>
+        <h2>Welcome to JSP Application!</h2>
         <%!
-        String s = "Hey, who cares about time!";
+        String s = "Use navigation menu!";
         %>
-        <h2>Hello World!</h2>
-        <h2 style="color:red">The current time is : <%= "unknown!" %></h2>
-        <h3 style="color:green;">The current time is <%= new java.util.Date() %>.</h3>
+        <h3 style="color:red">This application uses <%= "JSP" %>.</h3>
         <h4><%= s %></h4>
+        <h3 style="color:green;"><%= new java.util.Date() %></h3>
     </body>
 </html>
